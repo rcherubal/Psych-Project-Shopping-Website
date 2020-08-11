@@ -1,0 +1,23 @@
+<div class="tight container">
+	<img class="shopnames" src="{{stimuli shopname}}"></img>
+	<button id="wishlist-btn" class="wishlist">Wishlist ({{count}})</button> 
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span><button id="close" disabled></button></span>
+    <img id="bannermessage" src="{{stimuli tpb}}"></img>
+  </div>
+  
+</div>
+
+<!-- The div that holds the shop items -->
+<div id="centring">
+    <div id="shopContainer">
+        <!-- use triple {} to send non-html-escape text which will directly write html -->
+        {{{shop}}}
+    </div>
+</div>
