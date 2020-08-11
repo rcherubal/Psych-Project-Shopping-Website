@@ -1,0 +1,305 @@
+@import '/style/style.less';
+/* Styles I have added */
+#shopContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:center;
+}
+
+.gorilla-frame-responsive{
+    background: #faf9f8;
+}
+
+.centredContain{
+    display: flex;
+    justify-content: center;
+}
+#returnButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:30px;
+    color:green;
+    text-decoration:none;
+    vertical-align:top;
+    border:none;
+    background:none;
+    padding:0;
+}
+
+
+/* Styles I have modified */
+.ecorate{
+    height:35px;
+    width:auto;
+    margin-bottom: 20px;
+    margin-left:50px
+}
+.wishlist{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:30px;
+    color:black;
+    text-decoration:none;
+    vertical-align:top;
+    border:none;
+    background:none;
+    padding:0;
+}
+
+/* Prior Styles */
+.shopnames{
+    margin-left:auto;
+    margin-right:auto;
+    height:110px;
+    width:auto;
+    display:block;
+}
+
+#wishlistpage{
+    width:884px; /* width of overall div is 884 px */
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background: #faf9f8;
+}
+
+#gorilla{
+    overflow:auto; /* allows scrolling */
+    font-family:lato;
+    font-style: normal;
+    font-variant: normal;
+    background:#faf9f8;
+}
+
+#centring{
+    margin-left:6.5%;
+    padding-top:130px;
+}
+
+#basket{
+    height: 60px;
+    float: right;
+    margin-right: 100px;
+}
+
+#bask{
+    padding-top: 130px;
+}
+
+h1{
+    text-align:center;
+    font-size:50px;
+    color:dodgerblue;
+}
+.prod{
+    border:none;
+    background:none;
+    padding:0;
+}
+
+.column{
+    margin:auto;
+}
+
+.wishlistitem{
+    width:100px;
+    height:auto;
+}
+
+.wishlisteco{
+    height:25px;
+    width:auto;
+}
+
+#items{
+    width:100%;
+    margin:0px;
+}
+
+.addtobag{
+    border:none;
+    background:none;
+    padding:0;
+}
+
+.removefromwish{
+    border:none;
+    background:none;
+    padding:0;
+}
+
+.removefrombag{
+    border:none;
+    background:none;
+    padding:0;
+}
+
+.imgdisp-hold{
+    position: relative;
+    width:200px;
+    height:300px;
+    border:none;
+    margin:25px;
+    margin-bottom:0px;
+}
+
+.imgdisp-ghost{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #eae6dd;
+    border:none;
+    margin:25px;
+    margin-bottom:0px;
+}
+
+.imgdisp-hold:hover .imgdisp-ghost {
+  opacity: 0.75;
+}
+
+.imgdisp-ghost:active {
+    background-color: #41403D;
+}
+
+.add-rmv-text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    pointer-events:none;
+}
+
+.clothpics{
+    width:200px;
+    height:300px;
+    border:none;
+    margin:25px;
+    margin-bottom:0px;
+}
+
+.description{
+    margin-left:50px;
+}
+
+.price{
+    margin:25px;
+    margin-left:50px;
+    border:none;
+    background:none;
+    font-family:arial;
+}
+.checkout{
+    list-style-type:none;
+    vertical-align:top;
+    font-size:16px;
+    padding: 30px 64px;
+}
+
+.backtoonline{
+    text-align:center;
+    font-size:50px;
+    color:blue !important;
+    border:none;
+    background:none;
+    padding:0;
+    margin-left:250px;
+}
+
+#wishlist-list{
+    float:top;
+    display: flex;
+    flex-direction: column;
+    margin-left:40px;
+}
+
+#shoppingbag-list{
+    float:top;
+    display: flex;
+    flex-direction: column;
+}
+
+#wishhead{
+    float:left;
+    margin-left:100px;
+    font-size:30px;
+}
+
+#checkhead{
+    float:right;
+    font-size:30px;
+    margin-right:20px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display:none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 200px auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#bannermessage{
+    width:100%;
+    height:auto;
+}
+
+/* The Close Button */
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border:none;
+    background:none;
+    padding:0;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#finish{
+    bottom:50px;
+    position:fixed;
+    margin-left:720px;
+}
