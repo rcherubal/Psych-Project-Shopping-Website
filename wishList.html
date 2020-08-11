@@ -1,0 +1,28 @@
+<div id="wishlistpage">
+    <div class="container">
+    	<button class="backtoonline"><img class="shopnames" src="{{stimuli shopname}}"></button>
+    </div>
+    
+    <div id="bask">
+        <p id="wishhead">Wishlist</p>
+        <img src="{{stimuli basketImage}}" id="basket"></img>
+
+        <p id="checkhead">Shopping Basket</p>
+    </div>    
+    <div>
+        <table style="width:100%;margin:0px;border:none;">
+            <tr>
+                <td class="column checkout" id="wishlist-list">
+            {{{wishlist}}}
+        </td>
+        
+        <td class="column checkout" id="shoppingBag-list">
+            {{{shoppingBag}}}
+        </td>
+        </tr>
+        </table>
+    </div>
+    <div style="float:right bottom;">
+        <button id="finish">Checkout</button>
+    </div>
+</div>
